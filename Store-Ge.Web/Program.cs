@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using static Store_Ge.Common.Constants.ValidationConstants;
 using Store_Ge.Services.Configurations;
 using Microsoft.AspNetCore.Identity;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -147,7 +148,7 @@ app.UseCookiePolicy();
 app.UseRouting();
 
 app.UseCors(x => x
-    .WithOrigins("https://store-ge.azure-websites.net", "http://localhost:4200")
+    .WithOrigins("https://green-dune-06affd203.2.azurestaticapps.net", "http://localhost:4200")
     .AllowAnyMethod()
     .AllowAnyHeader());
 
