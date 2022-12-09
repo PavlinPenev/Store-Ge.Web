@@ -6,7 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
   </PropertyGroup>
-
+	<PropertyGroup>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	</PropertyGroup>
+	
   <ItemGroup>
     <Resource Include="Services\EmailService\EmailSender\MailTemplates\ConfirmEmailTemplate.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

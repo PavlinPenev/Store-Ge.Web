@@ -7,6 +7,9 @@
     <UserSecretsId>aspnet-Store_Ge.Web-9995FF74-6AC3-447E-BF32-49A52E967E2C</UserSecretsId>
     <RootNamespace>Store_Ge.Web</RootNamespace>
   </PropertyGroup>
+	<PropertyGroup>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	</PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0" />
