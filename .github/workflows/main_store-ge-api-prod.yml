@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'store-ge-api-prod'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5AEF93C3204B4080AFBC8DD97D684695 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_61137DA0BEFE421D982BC2EC8CE95D70 }}
           package: .
