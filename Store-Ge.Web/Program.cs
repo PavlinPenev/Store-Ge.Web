@@ -16,7 +16,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using static Store_Ge.Common.Constants.ValidationConstants;
 using Store_Ge.Services.Configurations;
 using Microsoft.AspNetCore.Identity;
-using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
