@@ -16,8 +16,16 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using static Store_Ge.Common.Constants.ValidationConstants;
 using Store_Ge.Services.Configurations;
 using Microsoft.AspNetCore.Identity;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+
+if (builder.Environment.IsProduction())
+{
+    builder.Configuration.AddAzureKeyVault(
+        new Uri($"https://{builder.Configuration["KeyVaultName"]}.vault.azure.net/"),
+        new DefaultAzureCredential());
+}
 
 var jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSettingsSection);
@@ -147,7 +155,7 @@ app.UseCookiePolicy();
 app.UseRouting();
 
 app.UseCors(x => x
-    .WithOrigins("https://green-dune-06affd203.2.azurestaticapps.net", "http://localhost:4200")
+    .WithOrigins(ngAppSettingsSection.GetValue<string>("StoreGeAppBaseUrl"), "http://localhost:4200")
     .AllowAnyMethod()
     .AllowAnyHeader());
 

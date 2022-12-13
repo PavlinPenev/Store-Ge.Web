@@ -107,6 +107,9 @@ namespace Store_Ge.Services.Services.ProductsService
                 if (addProducts[i].Id != null)
                 {
                     addProducts[i].Id = dataProtector.Unprotect(addProducts[i].Id);
+                }
+                else
+                {
                     await auditTrailService.AddProduct(addProducts[i], storeId);
                 }
 

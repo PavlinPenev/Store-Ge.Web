@@ -17,7 +17,7 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1" />
-		<PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="6.16.1" />
+		<PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="6.18.0" />
 	</ItemGroup>
 
 	<ItemGroup>
