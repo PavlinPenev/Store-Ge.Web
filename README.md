@@ -162,7 +162,7 @@ Technical Documentation
     Step 3. Register in https://sendgrid.com/ with free account and get the API key that's been given to you(don't give it to anyone else). Add the key to the "SendGridSettings:SendGridApiKey" secret
     Step 4. The other secrets are up to you to give them random suitable value(strong highly unguessable values are recommended)
     Step 5. If you run your SQL Server on Docker start it.
-    Step 6. Open the Store-Ge.UI project with VS Code and run the "ng serve -o" command in the terminal. This will serve the front end project and will be opened on port 4200.
+    Step 6. Open my other repository with the frontend project/store-ge/ with VS Code and run the "ng serve -o" command in the terminal. This will serve the front end project and will be opened on port 4200.
     Step 7. Start the Web project under the IIS Express profile
     Step 8. Should be ready to use!
     
